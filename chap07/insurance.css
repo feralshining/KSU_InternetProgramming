@@ -1,0 +1,17 @@
+body {
+    width: 980px;
+    margin: 0;
+    padding: 0;
+}
+
+header #logo{
+    float: left;
+    margin: 15px 0 0 20px;
+}
+
+#top_menu {
+    float: right;
+    margin: 30px 20px 0 0;
+    list-style: none;
+    display: inline;
+}
