@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Document</title>
+</head>
+<body>
+    <ul id="to-do-list">
+        <li>예제 아이템1</li>
+    </ul>
+    <input type="text" id="item-input" placeholder="새로운 아이템">
+    <button id="add-item-btn">추가</button>
+    <button id="remove-item-btn">삭제</button>
+    <header><h1>Dom Example</h1></header>
+    <section>
+        <p>여기는 일반 p 태그 영역입니다.</p>
+        <aside id="aside">
+            <strong>javascript</strong>가 실행되는 곳.
+        </aside>
+    </section>
+    <table border="1" id="info-table">
+        <tbody>
+            <tr>
+                <th>Item</th>
+                <th>Description</th>
+            </tr>
+            <!-- 이곳에 동적으로 추가 -->
+            <tr>
+                <th colspan="2">HTML</th>
+            </tr>
+            <tr>    
+                <td>DOM</td>
+                <td class="dom-desc" style="color: red">Document Object Model</td>
+            </tr>
+            <tr>
+                <td>Javascript</td>
+                <td>동적으로 웹사이트 조작</td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <button id="mouse-btn">버튼 클릭</button>
+    <script src="./dom.js"></script>    
+</body>
+</html>
