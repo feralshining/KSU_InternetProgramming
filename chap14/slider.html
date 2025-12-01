@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+        }
+        .slider-container{
+            width: 300px;
+            overflow: hidden; /* 슬라이더 영역 밖의 이미지는 숨김 */ 
+            margin: 20px auto auto auto;
+            
+        }
+        .image-track{
+            display: flex;
+            transition: transform 0.5s ease-in-out; /* 부드러운 이동 효과 */
+        }
+        .slider-dots {
+            text-align: center;
+            margin-top: 10px;
+        }
+        .dot{
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            margin: 0 5px;
+            background-color: #bbb;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        /*
+            d 
+        */
+        .dot.active{
+            background-color: #717171;
+        }
+    </style>
+</head>
+<body>
+    <h2 style="text-align: center;">이미지 슬라이더</h2>
+    <div class="slider-container">
+        <div class="image-track" id="imageTrack">
+            <img src="https://s.pstatic.net/shopping.phinf/20251126_12/24b60876-6c73-4147-85bf-6536f41510a9.jpg" width="300px">
+            <img src="https://s.pstatic.net/shopping.phinf/20251128_12/85f572fe-1f4f-45bf-9058-34ee8146f805.jpg" width="300px">
+            <img src="https://s.pstatic.net/shopping.phinf/20251114_12/5f1d8904-43ee-4c30-966f-466948015d99.jpg" width="300px">
+        </div>
+    </div>
+    <div id="slider-dots" style="text-align: center; margin-top: 10px;"></div>
+    <!-- <div style="text-align: center; margin-top: 10px;">
+        <button id="prev-btn">이전</button>
+        <button id="next-btn">다음</button>
+    </div> -->
+    <!-- <script src="./slider.js"></script> -->
+     <script src="./sliderdots.js"></script>
+</body>
+</html>
